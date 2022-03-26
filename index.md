@@ -1,4 +1,4 @@
-# Log4J -> CVE-2021-44228
+# Log4J - CVE-2021-44228
     Versions: All versions from 2.0-beta9 to 2.16
 
 
