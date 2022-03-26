@@ -8,4 +8,4 @@ It is still used by many companies of all types and sizes and even after months 
 
 Your first targets are usually data entry points like username and password logins, http headers like User-Agent, X-Forwarded-For and others. Basically anywhere the user can provide data.
 
-To perform this exploit, I used a vulnerable and easy-to-apply LAB available in this [GIT](https://github.com/leonjza/log4jpwn)
+To perform this exploit, I used a vulnerable and easy-to-apply LAB available in this [GIT](https://github.com/leonjza/log4jpwn).
