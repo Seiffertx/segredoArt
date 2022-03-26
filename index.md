@@ -1,5 +1,5 @@
 # Log4J -> CVE-2021-44228
-    Versions: All versions from 2.0-beta9 to version 2.16
+    Versions: All versions from 2.0-beta9 to 2.16
 
 
 CVE-2021-44228 or Log4Shell is a vulnerability found in the Java library with the maximum criticality score of CVSS 10/10. The library named Log4j got this rating because besides being very popular, it grants access to Remote Code Execution (RCE).
