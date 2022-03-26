@@ -1,5 +1,5 @@
-# Molho
+# Trio anti MRC
 
--> Bora dalhe 
-
- - `Eu gosto de listas`
+ 1. LQS
+ 2. VINI
+ 3. LUQ
