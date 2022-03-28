@@ -21,5 +21,5 @@ At first, I will use **curl** to send a request to the server, requesting the ja
 
 Making the server run it: 
 
-https://imgur.com/IDOutMr.png
+![image](https://imgur.com/IDOutMr.png)
 
