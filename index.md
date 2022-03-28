@@ -10,7 +10,7 @@ Your first targets are usually data entry points like username and password logi
 
 To perform this exploit, I used a vulnerable and easy-to-apply LAB available in this [GIT](https://github.com/leonjza/log4jpwn).
 
-![image](https://user-images.githubusercontent.com/66689576/160401808-abfc565e-e62e-4bf7-b707-c81c72e2f090.png)
+![image](https://imgur.com/7cNAGgd.png)
 
 With docker running on port 8080, we can start to identify if the server is vulnerable to log4shell or not.
 It may be interesting to check the version of Log4J, if there is a log where you can insert some information that the application does not consider as a string, as well as an endpoint with some protocol such as HTTP for example, which may allow sending a malicious string.
