@@ -17,6 +17,8 @@ It may be interesting to check the version of Log4J, if there is a log where you
 
 At first, I will use **curl** to send a request to the server, requesting the java version from the User-Agent.
 
+    curl -v -H 'User-Agent: ${java:version}' '172.17.0.1:8080/'
+
 Making the server run it: 
 
 ![image](https://imgur.com/IDOutMr.png)
