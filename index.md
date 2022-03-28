@@ -14,3 +14,7 @@ To perform this exploit, I used a vulnerable and easy-to-apply LAB available in 
 
 With docker running on port 8080, we can start to identify if the server is vulnerable to log4shell or not.
 It may be interesting to check the version of Log4J, if there is a log where you can insert some information that the application does not consider as a string, as well as an endpoint with some protocol such as HTTP for example, which may allow sending a malicious string.
+
+At first, I will use **curl** to send a request to the server.
+
+    curl -v -H 'User-Agent: ${java:version}' '172.17.0.1:8080/'
