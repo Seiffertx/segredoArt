@@ -21,5 +21,5 @@ At first, I will use **curl** to send a request to the server, requesting the ja
 
 Making the server run it: 
 
-![image](https://user-images.githubusercontent.com/66689576/160426019-27258cdb-5770-41a1-9d56-8a69ff943e70.png)
+https://imgur.com/IDOutMr.png
 
