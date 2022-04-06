@@ -35,8 +35,10 @@ When we make a request to the User-Agent, sending what would be the payload, thr
 
 ![curlTrue](https://user-images.githubusercontent.com/66689576/162072699-82285f21-70d6-4668-b94c-96a1ab4eb771.png)
 
-Here we can see that we received a connection from Docker and this validates to us that the server is vulnerable.
+Here we can see that a connection was established with my machine, when the server (docker) executed the payload I sent to it, thus releasing the opportunity for an RCE.
 
 ![nc22222](https://user-images.githubusercontent.com/66689576/162073080-26e07482-377c-43d7-afd7-b8009d32631e.png)
+
+Server-side view running the payload:
 
 ![logLog](https://user-images.githubusercontent.com/66689576/162073340-6db1bf73-975d-47b7-97d7-011c7c7c76c8.png)
