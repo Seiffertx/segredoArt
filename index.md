@@ -47,8 +47,15 @@ Server-side view running the payload:
 
 ![logLog](https://user-images.githubusercontent.com/66689576/162073340-6db1bf73-975d-47b7-97d7-011c7c7c76c8.png)
 
-## Conclusion
+## References
 
-Between these versions it is possible to execute a script/payload on the server where the application is, opening the possibility of creating an RCE connection through any field that we can insert data, http headers...
+**Mitre**
+https://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2021-44228
+**Curl**
+https://curl.se/docs/manpage.html
+**Docker LAB**
+https://github.com/leonjza/log4jpwn
+**Luna Sec**
+https://www.lunasec.io/docs/blog/log4j-zero-day/
 
 That's it :)
