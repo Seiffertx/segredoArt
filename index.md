@@ -23,6 +23,8 @@ Making the server run it:
 
 ![ua](https://user-images.githubusercontent.com/66689576/160430578-9caa5e17-129b-4bc3-a7fd-1e574ac4fc2e.png)
 
+## Execution
+
 Now we can get a little better look at what's to come. If in our request, we use the **JNDI** (Java Naming and Directory Interface) protocol, it becomes possible to execute some malicious payload inside the server, thus triggering the log4j vulnerability, which, after execution, makes the server returns us a Java classpath, which was injected earlier.
 
 This injected payload when triggered, gives the attacker access to execute arbitrary code. 
