@@ -61,4 +61,6 @@ Server-side view running the payload:
 **Luna Sec**
 >https://www.lunasec.io/docs/blog/log4j-zero-day/
 
+
+
 That's it :)
