@@ -8,7 +8,7 @@ It is still used by many companies of all types and sizes and even after months 
 
 Your first targets are usually data entry points like username and password logins, http headers like User-Agent, X-Forwarded-For and others. Basically anywhere the user can provide data.
 
-To perform this exploit, I used a vulnerable and easy-to-apply LAB available in this [GIT](https://github.com/leonjza/log4jpwn).
+To perform this exploit, I used a vulnerable and easy-to-apply LAB with Log4J available in this [GIT](https://github.com/leonjza/log4jpwn).
 
 ![docker](https://user-images.githubusercontent.com/66689576/160430502-abc2c99e-7a65-48d5-913d-f165442ef757.png)
 
@@ -42,3 +42,9 @@ Here we can see that a connection was established with my machine, when the serv
 Server-side view running the payload:
 
 ![logLog](https://user-images.githubusercontent.com/66689576/162073340-6db1bf73-975d-47b7-97d7-011c7c7c76c8.png)
+
+## Conclusion
+
+Between these versions it is possible to execute a script/payload on the server where the application is, giving the possibility to create an RCE connection through any field that we can insert data, http headers...
+
+That's it :)
