@@ -50,12 +50,15 @@ Server-side view running the payload:
 ## References
 
 **Mitre**
-https://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2021-44228
+>https://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2021-44228
+
 **Curl**
-https://curl.se/docs/manpage.html
+>https://curl.se/docs/manpage.html
+
 **Docker LAB**
-https://github.com/leonjza/log4jpwn
+>https://github.com/leonjza/log4jpwn
+
 **Luna Sec**
-https://www.lunasec.io/docs/blog/log4j-zero-day/
+>https://www.lunasec.io/docs/blog/log4j-zero-day/
 
 That's it :)
