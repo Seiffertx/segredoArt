@@ -45,6 +45,6 @@ Server-side view running the payload:
 
 ## Conclusion
 
-Between these versions it is possible to execute a script/payload on the server where the application is, giving the possibility to create an RCE connection through any field that we can insert data, http headers...
+Between these versions it is possible to execute a script/payload on the server where the application is, opening the possibility of creating an RCE connection through any field that we can insert data, http headers...
 
 That's it :)
