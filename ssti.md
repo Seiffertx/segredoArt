@@ -1,5 +1,5 @@
 
-# SSTI - SERVER SIDE TEMPLATE INJECTION EXECUTION
+# SSTI VULNERABILITY - SERVER SIDE TEMPLATE INJECTION EXECUTION
 
 As the name implies, it's a vulnerability that occurs on the server side, giving the idea that the attacker will induce you to perform some action that theoretically shouldn't, since Templates are basically dynamic parts of the content **that have the ability to evaluate arbitrary code.**
 
