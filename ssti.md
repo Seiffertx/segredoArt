@@ -18,6 +18,8 @@ A primeira batalha é detectar, um simples exemplo seria procurar por inputs, ur
 
 ![jao](https://user-images.githubusercontent.com/66689576/180695563-12d6c548-63ac-46b0-b184-e7f3e1cd511f.png)
 
+Exception:
+
 ![exceptions](https://user-images.githubusercontent.com/66689576/180695573-afa09e2a-3dec-47e5-8dbf-2594ee1955d4.png)
 
 Após detectar que o template que está sendo utilizado é o jinja2, é interessante acessar sua documentação e entender como utiliza-lo para posteriormente começar o ataque.
