@@ -51,13 +51,13 @@ As we can see, there are several templates and each one has a different way of c
 
 ## **THE PREVENT**
 
-One of the big mistakes that occur is the way the application was developed, as in this example concatenating the user input with the template string, on line 13.
+One of the big mistakes that occur is the way the application was developed, as in this example concatenating the user input with the template string, on line 11.
 
-![insecure](https://user-images.githubusercontent.com/66689576/180859693-fad9134a-c1e6-4aa2-90f6-2459df2de11a.png)
+![insecureTRUE](https://user-images.githubusercontent.com/66689576/180862782-e4e1084e-3403-423b-8f85-efce5bbeaccd.png)
 
-We can fix this by passing the variable to the template context, as in line 13.
+We can fix this by passing the variable to the template context, as in line 11.
 
-![secure](https://user-images.githubusercontent.com/66689576/180859846-b9158558-e1ae-4d97-85c1-880ee12c317f.png)
+![secureTRUE](https://user-images.githubusercontent.com/66689576/180862800-7c9e6caa-7fb4-4829-ab6d-64f941e959d4.png)
 
 That's it for now, thank you! =)
 
