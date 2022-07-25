@@ -35,7 +35,7 @@ After detecting that the template being used is jinja2, it would be interesting 
 
 ![100](https://user-images.githubusercontent.com/66689576/180695595-66f01230-8349-4580-a5ce-af518581ac4d.png)
 
-## **THE EXPLORE**
+## **THE EXPLORATION**
 
 If the documentation is not enough, an alternative is to explore the environment and discover the objects that you can access.
 
@@ -49,7 +49,7 @@ In Java to list environment variables you can use:
 
 As we can see, there are several templates and each one has a different way of communicating because they were developed in different ways and languages, which can be difficult. To help with research, we can find several wordlists on the web with different payloads for different types of templates.
 
-## **THE PREVENT**
+## **THE PREVENTION**
 
 One of the big mistakes that occur is the way the application was developed, as in this example concatenating the user input with the template string, on line 11.
 
