@@ -1,7 +1,5 @@
 # SSTI - SERVER SIDE TEMPLATE INJECTION EXECUTION
 
-## **THE SSTI**
-
 Como o próprio nome já diz, é uma vulnerabilidade que ocorre no lado do servidor, dando a ideia de que o atacante irá induzi-lo a executar alguma ação que teoricamente não deveria, já os **Templates** são basicamente partes dinâmicas do conteúdo **that have the ability to evaluate arbitrary code.**
 
 Se houver uma página web onde esse conteúdo é praticamente o mesmo, mas apenas algumas partes dela mudam, há uma boa chance de que essa página esteja usando templates.
