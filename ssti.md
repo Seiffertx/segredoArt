@@ -25,3 +25,9 @@ Exception:
 Após detectar que o template que está sendo utilizado é o jinja2, é interessante acessar sua documentação e entender como utiliza-lo para posteriormente começar o ataque.
 
 ![100](https://user-images.githubusercontent.com/66689576/180695595-66f01230-8349-4580-a5ce-af518581ac4d.png)
+
+Outro metodo de identificar que pode ser utilizado, é realizar brute-force com lista de payloads relacionados aos diversos templates que existem hoje.
+
+![templates](https://user-images.githubusercontent.com/66689576/180703700-6ff138ae-5581-48df-8449-b1764c51e066.png)
+
+
