@@ -13,7 +13,7 @@ Most of the time, the impact is critical, and it can vary a lot from the way the
 It’s hard to find an SSTI that doesn’t have a big impact, even if initially it doesn’t seem like, the chance of it escalating to another vulnerability or gaining access to read sensitive data and access files that shouldn’t be possible is big.
 
 
-## **THE IDENTIFY**
+## **THE IDENTIFICATION**
 
 The first battle is to detect, a simple example would be looking for inputs, url's that allow us to send data and looking for an "exception" when sending special characters like `${{<%[%'"}}%\`, often used for perform actions in templates, which may indicate a possible SSTI.
 
