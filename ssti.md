@@ -10,7 +10,7 @@ If there's a web page where the content is pretty much the same, but only some p
 
 Most of the time, the impact is critical, and you it's likely to achieve RCE and take full control of the server, although the way in which you achieve that can vary, from how the application is implementing it to which model of template is being used. It is important to note that the vulnerability can exist anywhere, not just on the server side, but wherever there is a template available.
 
-It’s hard to find an SSTI that doesn’t have a big impact, even if initially it doesn’t seem like it, the chance of escalating to another vulnerability or gaining access to sensitive data and access files that shouldn’t be possible is big.
+It’s hard to find an SSTI that doesn’t have a big impact, even if initially doesn’t seem like it, the chance of escalating to another vulnerability or gaining access to sensitive data and access files that shouldn’t be possible is big.
 
 
 ## **THE IDENTIFICATION**
