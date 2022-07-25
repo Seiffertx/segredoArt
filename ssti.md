@@ -30,6 +30,6 @@ Visualizando o Exception:
 
 ![exceptions](https://user-images.githubusercontent.com/66689576/180695573-afa09e2a-3dec-47e5-8dbf-2594ee1955d4.png)
 
-Após detectar que o template que está sendo utilizado é o jinja2, seria interessante acessar sua documentação e entender como utiliza-lo para posteriormente começar um ataque mais s.
+Após detectar que o template que está sendo utilizado é o jinja2, seria interessante acessar sua documentação e entender como utiliza-lo para posteriormente começar um ataque mais solido.
 
 ![100](https://user-images.githubusercontent.com/66689576/180695595-66f01230-8349-4580-a5ce-af518581ac4d.png)
