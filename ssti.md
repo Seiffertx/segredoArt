@@ -51,11 +51,11 @@ As we can see, there are several templates and each one has a different way of c
 
 ## **THE PREVENT**
 
-Um dos grandes erros que ocorrem é o modo em como a aplicação foi desenvolvida, como nesse exemplo contatenando o o input do usuário com a string do template, na linha 13.
+One of the big mistakes that occur is the way the application was developed, as in this example concatenating the user input with the template string, on line 13.
 
 ![insecure](https://user-images.githubusercontent.com/66689576/180859693-fad9134a-c1e6-4aa2-90f6-2459df2de11a.png)
 
-Podemos corrigir isso, passando a variavel para o contexto do modelo, como na linha 13.
+We can fix this by passing the variable to the template context, as in line 13.
 
 ![secure](https://user-images.githubusercontent.com/66689576/180859846-b9158558-e1ae-4d97-85c1-880ee12c317f.png)
 
