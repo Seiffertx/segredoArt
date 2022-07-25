@@ -15,7 +15,7 @@ It’s hard to find an SSTI that doesn’t have a big impact, even if initially 
 
 ## **THE IDENTIFICATION**
 
-The first battle is to detect, a simple example would be looking for inputs, url's that allow us to send data and looking for an "exception" when sending special characters like `${{<%[%'"}}%\`, often used for perform actions in templates, which may indicate a possible SSTI.
+The first battle is to detect the template engine, a simple example would be looking for inputs, url's that allow us to send data and looking for an "exception" when sending special characters like `${{<%[%'"}}%\`, often used for perform actions in templates, which may indicate a possible SSTI.
 
 It can also be identified manually or with brute-force, using payload lists related to the various templates that exist today.
 
