@@ -23,29 +23,29 @@ It can also be identified manually or with brute-force, using payload lists rela
 
 ## **THE EXECUTION**
 
-Criei um servidor com uma aplicação em flask e jinja2 vulneravel a SSTI para uma simples demonstração:
+I created a server with an application in flask and jinja2 vulnerable to SSTI for a simple demonstration:
 
 ![jao](https://user-images.githubusercontent.com/66689576/180695563-12d6c548-63ac-46b0-b184-e7f3e1cd511f.png)
 
-Visualizando o Exception:
+Viewing the Exception:
 
 ![exceptions](https://user-images.githubusercontent.com/66689576/180695573-afa09e2a-3dec-47e5-8dbf-2594ee1955d4.png)
 
-Após detectar que o template que está sendo utilizado é o jinja2, seria interessante acessar sua documentação e entender como utiliza-lo para posteriormente começar um ataque mais solido.
+After detecting that the template being used is jinja2, it would be interesting to access its documentation and understand how to use it to later start a more solid attack.
 
 ![100](https://user-images.githubusercontent.com/66689576/180695595-66f01230-8349-4580-a5ce-af518581ac4d.png)
 ## **THE EXPLORE**
 
-Se apenas com a documentação não for suficiente, uma alternativa é explorar o environment e descobrir os objetos que você pode ter acesso.
+If the documentation is not enough, an alternative is to explore the environment and discover the objects that you can access.
 
-Esses objetos que estão presentes em templates engines, podem mostrar um caminho dependendo do quanto estão expostos. Com alguns objetos, podemos visualizar as variáveis do ambiente, ler arquivos, executar comandos e tirar vantagem disso, por exemplo no Ruby, para listar diretorios e arquivos, utilizam:
+These objects that are present in templates engines, can show a path depending on how much they are exposed. With some objects, we can view environment variables, read files, execute commands and take advantage of that, for example in Ruby, to list directories and files, you can use:
 
     <%= Dir.entries('/') %>
 
-No Java para listar as variáveis do ambiente, utilizam:
+In Java to list environment variables you can use:
 
     ${T(java.lang.System).getenv()}
 
-Como podemos observar, existem diversas template engines e cada uma possui uma maneira diferente de se comunicar pois foram desenvolvidas de maneiras e linguagens diferentes uma da outra, o que pode dificultar. Para auxiliar nas buscas, podemos encontrar várias wordlists pela web com payloads variados para diversos tipos de templates.
+As we can see, there are several templates and each one has a different way of communicating because they were developed in different ways and languages, which can be difficult. To help with research, we can find several wordlists on the web with different payloads for different types of templates.
 
 ## **THE PREVENT**
