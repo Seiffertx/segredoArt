@@ -22,7 +22,7 @@ Pode ser identificado também manualmente ou com brute-force, utilizando listas 
 
 ## **THE EXECUTION**
 
-Criei um servidor em flask e jinja2 para uma simples demonstração:
+Criei um servidor em flask e jinja2 vulneravel a SSTI para uma simples demonstração:
 
 ![jao](https://user-images.githubusercontent.com/66689576/180695563-12d6c548-63ac-46b0-b184-e7f3e1cd511f.png)
 
