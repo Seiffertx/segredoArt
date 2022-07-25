@@ -19,6 +19,7 @@ Na grande maioria das vezes o impacto é crítico, podendo variar muito do modo 
 A primeira batalha é detectar, um simples exemplo seria procurar por inputs, url's que nos possibilite enviar dados e procurar um "exception" ao enviar caracteres especiais como `${{<%[%'"}}%\`, muito utilizados para executar ações em templates, podendo indicar um possível SSTI.
 
 Pode ser identificado também manualmente ou com brute-force, utilizando listas de payloads relacionados aos diversos templates que existem hoje.
+
 ![templates](https://user-images.githubusercontent.com/66689576/180703700-6ff138ae-5581-48df-8449-b1764c51e066.png)
 
 ## **THE EXECUTION**
