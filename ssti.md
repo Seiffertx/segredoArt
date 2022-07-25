@@ -59,7 +59,7 @@ We can fix this by passing the variable to the template context, as in line 13.
 
 ![secure](https://user-images.githubusercontent.com/66689576/180859846-b9158558-e1ae-4d97-85c1-880ee12c317f.png)
 
-That's it for now, thank you! 
+That's it for now, thank you! =)
 
 References:
 >CURL: https://curl.se/docs/manpage.html
