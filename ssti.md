@@ -1,3 +1,4 @@
+
 # SSTI - SERVER SIDE TEMPLATE INJECTION EXECUTION
 
 Como o próprio nome já diz, é uma vulnerabilidade que ocorre no lado do servidor, dando a ideia de que o atacante irá induzi-lo a executar alguma ação que teoricamente não deveria, já os **Templates** são basicamente partes dinâmicas do conteúdo **that have the ability to evaluate arbitrary code.**
@@ -33,3 +34,18 @@ Visualizando o Exception:
 Após detectar que o template que está sendo utilizado é o jinja2, seria interessante acessar sua documentação e entender como utiliza-lo para posteriormente começar um ataque mais solido.
 
 ![100](https://user-images.githubusercontent.com/66689576/180695595-66f01230-8349-4580-a5ce-af518581ac4d.png)
+## **THE EXPLORE**
+
+Se apenas com a documentação não for suficiente, uma alternativa é explorar o environment e descobrir os objetos que você pode ter acesso.
+
+Esses objetos que estão presentes em templates engines, podem mostrar um caminho dependendo do quanto estão expostos. Com alguns objetos, podemos visualizar as variáveis do ambiente, ler arquivos, executar comandos e tirar vantagem disso, por exemplo no Ruby, para listar diretorios e arquivos, utilizam:
+
+    <%= Dir.entries('/') %>
+
+No Java para listar as variáveis do ambiente, utilizam:
+
+    ${T(java.lang.System).getenv()}
+
+Como podemos observar, existem diversas template engines e cada uma possui uma maneira diferente de se comunicar pois foram desenvolvidas de maneiras e linguagens diferentes uma da outra, o que pode dificultar. Para auxiliar nas buscas, podemos encontrar várias wordlists pela web com payloads variados para diversos tipos de templates.
+
+## **THE PREVENT**
