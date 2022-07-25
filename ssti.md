@@ -34,6 +34,7 @@ Viewing the Exception:
 After detecting that the template being used is jinja2, it would be interesting to access its documentation and understand how to use it to later start a more solid attack.
 
 ![100](https://user-images.githubusercontent.com/66689576/180695595-66f01230-8349-4580-a5ce-af518581ac4d.png)
+
 ## **THE EXPLORE**
 
 If the documentation is not enough, an alternative is to explore the environment and discover the objects that you can access.
@@ -49,3 +50,24 @@ In Java to list environment variables you can use:
 As we can see, there are several templates and each one has a different way of communicating because they were developed in different ways and languages, which can be difficult. To help with research, we can find several wordlists on the web with different payloads for different types of templates.
 
 ## **THE PREVENT**
+
+Um dos grandes erros que ocorrem é o modo em como a aplicação foi desenvolvida, como nesse exemplo contatenando o o input do usuário com a string do template, na linha 13.
+
+![insecure](https://user-images.githubusercontent.com/66689576/180859693-fad9134a-c1e6-4aa2-90f6-2459df2de11a.png)
+
+Podemos corrigir isso, passando a variavel para o contexto do modelo, como na linha 13.
+
+![secure](https://user-images.githubusercontent.com/66689576/180859846-b9158558-e1ae-4d97-85c1-880ee12c317f.png)
+
+That's it for now, thank you! 
+
+References:
+>CURL: https://curl.se/docs/manpage.html
+
+>PortSwigger Research: https://portswigger.net/research/server-side-template-injection
+
+>tplmap: https://github.com/epinna/tplmap
+
+>PayloadsAllTheThings(SSTI): https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection
+
+>Payloadbox(SSTI): https://github.com/payloadbox/ssti-payloads
