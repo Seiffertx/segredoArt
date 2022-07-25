@@ -10,14 +10,14 @@ If there's a web page where that content is pretty much the same, but only some 
 
 Most of the time, the impact is critical, and it can vary a lot from the way the application is using the template and also its model. Being able to achieve a Remote Code Execution (RCE) and get full control of the server. It is important to note that the vulnerability can exist anywhere, not just on the server side, but wherever there is a template available.
 
-É dificil encontrar um SSTI que não tenha um grande impacto, mesmo que inicialmente não pareça, a chance de escalar para outra vulnerabilidade ou obter acesso a leitura de dados confidenciais e acesso a arquivos que não deveriam ser possíveis é grande.
+It's hard to find an SSTI that doesn't have a big impact, even if initially it doesn't seem like the chance of it escalating to another vulnerability or gaining access to read sensitive data and access files that shouldn't be possible is great.
 
 
 ## **THE IDENTIFY**
 
-A primeira batalha é detectar, um simples exemplo seria procurar por inputs, url's que nos possibilite enviar dados e procurar um "exception" ao enviar caracteres especiais como `${{<%[%'"}}%\`, muito utilizados para executar ações em templates, podendo indicar um possível SSTI.
+The first battle is to detect, a simple example would be looking for inputs, url's that allow us to send data and looking for an "exception" when sending special characters like `${{<%[%'"}}%\`, often used for perform actions in templates, which may indicate a possible SSTI.
 
-Pode ser identificado também manualmente ou com brute-force, utilizando listas de payloads relacionados aos diversos templates que existem hoje.
+It can also be identified manually or with brute-force, using payload lists related to the various templates that exist today.
 
 ![templates](https://user-images.githubusercontent.com/66689576/180703700-6ff138ae-5581-48df-8449-b1764c51e066.png)
 
