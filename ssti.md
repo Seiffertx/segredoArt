@@ -47,7 +47,7 @@ In Java to list environment variables you can use:
 
     ${T(java.lang.System).getenv()}
 
-As we can see, there are several templates and each one has a different way of communicating because they were developed in different ways and languages, which can be difficult. To help with research, we can find several wordlists on the web with different payloads for different types of templates.
+As we can see, there are several templates and each one has a different way of communicating because they were developed in different ways and languages, which can be difficult. To help with researchs, we can find several wordlists on the web with different payloads for different types of templates.
 
 ## **THE PREVENTION**
 
