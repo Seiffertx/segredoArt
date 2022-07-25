@@ -63,7 +63,7 @@ Sometimes it's almost inevitable to block all arbitrary code executions, having 
 
 ## **THE CONCLUSION**
 
-
+In general, the server-side template injection vulnerability is not complex, making it easy to exploit once detected, but it usually goes unnoticed if you don't try to find it directly.
 
 That's it for now, thank you! =)
 
