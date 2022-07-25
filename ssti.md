@@ -1,18 +1,18 @@
-#SSTI -> SERVER SIDE TEMPLATE INJECTION EXECUTION
+# SSTI -> SERVER SIDE TEMPLATE INJECTION EXECUTION
 
-**THE SSTI**
+## **THE SSTI**
 
 Como o próprio nome já diz, é uma vulnerabilidade que ocorre no lado do servidor, dando a ideia de que o atacante irá induzi-lo a executar alguma ação que teoricamente não deveria, já os **Templates** são basicamente partes dinâmicas do conteúdo **that have the ability to evaluate arbitrary code.**
 Se houver uma página web onde esse conteúdo é praticamente o mesmo, mas apenas algumas partes dela mudam, há uma boa chance de que essa página esteja usando templates.
 
 
-**THE IMPACT**
+## **THE IMPACT**
 
 Na grande maioria das vezes o impacto é crítico, podendo variar muito do modo em como a aplicação está utilizando o template e também seu modelo. Podendo chegar a um Remote Code Execution (RCE) e obter controle total do servidor. 
 É dificil encontrar um SSTI que não tenha um grande impacto, mesmo que inicialmente não pareça, a chance de escalar para outra vulnerabilidade ou obter acesso a leitura de dados confidenciais e acesso a arquivos que não deveriam ser possíveis é grande.
 
 
-**THE EXECUTION**
+## **THE EXECUTION**
 
 A primeira batalha é detectar, um simples exemplo seria procurar por inputs, url's que nos possibilite enviar dados e procurar um "exception" ao enviar caracteres especiais como `${{<%[%'"}}%\`, muito utilizados para executar ações em templates, podendo indicar um possível SSTI.
 
