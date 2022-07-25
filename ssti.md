@@ -22,9 +22,11 @@ Pode ser identificado também manualmente ou com brute-force, utilizando listas 
 
 ## **THE EXECUTION**
 
+Criei um servidor em flask e jinja2 para uma simples demonstração:
+
 ![jao](https://user-images.githubusercontent.com/66689576/180695563-12d6c548-63ac-46b0-b184-e7f3e1cd511f.png)
 
-Exception:
+Visualizando um Exception:
 
 ![exceptions](https://user-images.githubusercontent.com/66689576/180695573-afa09e2a-3dec-47e5-8dbf-2594ee1955d4.png)
 
