@@ -7,7 +7,7 @@ Se houver uma página web onde esse conteúdo é praticamente o mesmo, mas apena
 
 ## **THE IMPACT**
 
-Na grande maioria das vezes o impacto é crítico, podendo variar muito do modo em como a aplicação está utilizando o template e também seu modelo. Podendo chegar a um Remote Code Execution (RCE) e obter controle total do servidor. 
+Na grande maioria das vezes o impacto é crítico, podendo variar muito do modo em como a aplicação está utilizando o template e também seu modelo. Podendo chegar a um Remote Code Execution (RCE) e obter controle total do servidor. É importante notar que a vulnerabilidade pode existir em qualquer lugar, não apenas no lado do servidor e sim aonde tenha algum template disponivel.
 
 É dificil encontrar um SSTI que não tenha um grande impacto, mesmo que inicialmente não pareça, a chance de escalar para outra vulnerabilidade ou obter acesso a leitura de dados confidenciais e acesso a arquivos que não deveriam ser possíveis é grande.
 
