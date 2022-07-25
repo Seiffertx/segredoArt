@@ -51,13 +51,19 @@ As we can see, there are several templates and each one has a different way of c
 
 ## **THE PREVENTION**
 
-One of the big mistakes that occur is the way the application was developed, as in this example concatenating the user input with the template string, on line 11.
+One of the ways to prevent Server Side Template Injection is to not allow any user to submit new templates or modify them, as in this example, concatenating the user input with the template string, on line 11.
 
 ![insecureTRUE](https://user-images.githubusercontent.com/66689576/180862782-e4e1084e-3403-423b-8f85-efce5bbeaccd.png)
 
 We can fix this by passing the variable to the template context, as in line 11.
 
 ![secureTRUE](https://user-images.githubusercontent.com/66689576/180862800-7c9e6caa-7fb4-4829-ab6d-64f941e959d4.png)
+
+Sometimes it's almost inevitable to block all arbitrary code executions, having to deploy your template in a locked container.
+
+## **THE CONCLUSION**
+
+
 
 That's it for now, thank you! =)
 
